@@ -38,7 +38,8 @@ def main():
     # if mode=='I':
     #     text = input()
 
-#     text=input()
+
+    text=input()
 #     if len(text)==0:
 #         tex=" "
     if text[0]=="I":
