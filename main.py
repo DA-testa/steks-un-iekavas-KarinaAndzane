@@ -31,18 +31,26 @@ def find_mismatch(text):
 
 
 def main():
-    mode=input()
-    if mode=='F':
+
+    # mode=input()
+    # if mode=='F':
+    #     text=requests.get(url).text
+    # if mode=='I':
+    #     text = input()
+
+    text=input()
+    if text[0]=="I":
+        pass
+    if text[0]=="F":
         text=requests.get(url).text
-    if mode=='I':
-        text = input()
 
     mismatch = find_mismatch(text)
     
     print(mismatch)
 
+   
     # Printing answer, write your code here
-
 
 if __name__ == "__main__":
     main()
+
