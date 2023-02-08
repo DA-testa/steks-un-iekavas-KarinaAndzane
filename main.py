@@ -42,9 +42,7 @@ def main():
 #     if len(text)==0:
 #         tex=" "
     if text[0]=="I":
-        pass
-        
-#         text=text[2:]
+        text=text[2:]
        
     if text[0]=="F":
         text=requests.get(url).text
