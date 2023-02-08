@@ -39,6 +39,8 @@ def main():
     #     text = input()
 
     text=input()
+    if len(text)==0:
+        tex=" "
     if text[0]=="I":
         text=text[2:]
        
