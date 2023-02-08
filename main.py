@@ -27,7 +27,7 @@ def find_mismatch(text):
     if len(opening_brackets_stack)==0:
         return "Success"
     else:
-        return opening_brackets_stack[-1].position
+        return (opening_brackets_stack[-1].position)
 
 
 def main():
@@ -40,6 +40,7 @@ def main():
 
     text=input()
     if text[0]=="I":
+        text=text[2:]
         pass
     if text[0]=="F":
         text=requests.get(url).text
