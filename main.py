@@ -40,9 +40,10 @@ def main():
 
 
     text=input()
-#     if len(text)==0:
-#         text=" "
+    
     if text[0]=="I":
+        if len(text)<3:
+           text="   "
         text=text[2:]
   #      pass
        
