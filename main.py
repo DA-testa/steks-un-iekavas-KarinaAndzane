@@ -42,10 +42,7 @@ def main():
     text=input()
     
     if text[0]=="I":
-        if len(text)<3:
-           text="   "
-        text=text[2:]
-  #      pass
+        text=input()
        
     if text[0]=="F":
         text=requests.get(url).text
