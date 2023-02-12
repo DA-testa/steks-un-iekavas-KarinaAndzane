@@ -37,23 +37,26 @@ def main():
     #     text=requests.get(url).text
     # if mode=='I':
     #     text = input()
-    
+
+
     text=input()
+    
     if text[0]=="I":
-        text.input()
+        text=input()
 #         if len(text)<3:
 #            text="   "
 #         text=text[2:]
-#          pass
+#   #      pass
        
     if text[0]=="F":
         text=requests.get(url).text
 
     mismatch = find_mismatch(text)
+    
     print(mismatch)
 
+   
     # Printing answer, write your code here
 
 if __name__ == "__main__":
     main()
-       
